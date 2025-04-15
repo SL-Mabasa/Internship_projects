@@ -1,2 +1,9 @@
-Check my personal projects using, Django API and Web framework, HTML, CSS and Javai
+Check my personal projects using, Django API and Web framework, HTML, CSS and Javascript 
+
+1. Construction assistant web application 
+- During my experience in the industry I have noticed a lack of easy to use tools that can be easily be assessed. It serves a purpose to assist in crucial construction activities such as VO, check products, buy products and more
+
+Check the 🔗link below to have a preview. Note the project is still in development:
+
 https://my-cs-tool.onrender.com/
+
