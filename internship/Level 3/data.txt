@@ -1,0 +1,53 @@
+Level 3
+(Advanced)
+Description: Build a fully functional web application
+using Django that includes user authentication (login,
+registration, and password reset). The application can
+be a blog, task manager, or e-commerce site.
+
+Task 1: Django Web Application
+with Authentication
+
+Implement user registration, login, and logout
+functionality.
+Secure user passwords using Django’s built-in
+authentication system.
+Create user roles (e.g., admin, regular user) with
+different permissions.
+Integrate password reset functionality via email.
+---------------------------------------------------------------------------------------------------
+
+
+
+(Advanced)
+Description: Create a Python script that encrypts and
+decrypts text files using a simple encryption
+algorithm (e.g., Caesar cipher or Fernet encryption).
+
+Task 2:
+Basic File Encryption/Decryption
+
+Allow the user to input a file for encryption or
+decryption.
+Encrypt the file content and save it as a new file.
+Provide functionality to decrypt the file back to its
+original form.
+----------------------------------------------------------------------------------------------------
+
+
+
+(Advanced) Description: Solve the classic N-Queens problem
+where the goal is to place N queens on an N x N
+chessboard such that no two queens threaten each
+other.
+
+Task 3: N-Queens Problem
+
+Represent the chessboard as a 2D array.
+Use backtracking to place queens one by one in safe
+positions.
+Ensure that no two queens are on the same row,
+column, or diagonal.
+Objectives:
+Challenges: Designing an efficient backtracking solution
+and correctly handling constraints.
