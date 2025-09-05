@@ -7,3 +7,8 @@ Check the 🔗link below to have a preview. Note the project is still in develop
 
 https://my-cs-tool.onrender.com/
 
+2. My web portfolio web application
+- I have incluided my CV and all my public projects for everyone to see and experience. I have included a solar PV app, a card design web application and soon to be updated with internship projects like e-commerce website
+
+https://mabasa-portfolio.onrender.com
+
