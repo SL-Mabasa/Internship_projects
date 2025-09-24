@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Your Cart</h1>
+{% if products %}
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Strength</th>
+      <th>Quantity (m³)</th>
+      <th>Subtotal</th>
+    </tr>
+    {% for item in products %}
+    <tr>
+      <td>{{ item.product.name }}</td>
+      <td>{{ item.product.strength }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>R{{ item.subtotal }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h2>Total: R{{ total }}</h2>
+{% else %}
+  <p>No items in your cart yet.</p>
+{% endif %}
+{% endblock %}

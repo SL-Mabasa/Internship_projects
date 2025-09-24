@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Register</h1>
+<form method="post">
+  {% csrf_token %}
+  <p>{{ form.username.label_tag }} {{ form.username }}</p>
+  <p>{{ form.email.label_tag }} {{ form.email }}</p>
+  <p>{{ form.password1.label_tag }} {{ form.password1 }}</p>
+  <p>{{ form.password2.label_tag }} {{ form.password2 }}</p>
+  
+  <button type="submit">Register</button>
+</form>
+
+{% if form.errors %}
+  <div class="error-messages">
+    {{ form.errors }}
+  </div>
+{% endif %}
+{% endblock %}

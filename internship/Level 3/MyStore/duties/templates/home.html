@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<h1>Available Concrete Products</h1>
+<div class="product-grid">
+  {% for product in products %}
+  <div class="product-card">
+    {% if product.image %}
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-img">
+    {% else %}
+      <img src="{% static 'img/concrete1.jpeg' %}" alt="Concrete" class="product-img">
+    {% endif %}
+    <h2>{{ product.strength }}</h2>
+    <p>{{ product.description }}</p>
+    <p><strong>R{{ product.price }} per m³</strong></p>
+    <form action="{% url 'add_to_cart' product.id %}" method="post">
+      {% csrf_token %}
+      <label for="qty{{ product.id }}">Quantity (m³):</label>
+      <input type="number" name="quantity" id="qty{{ product.id }}" value="1" min="1">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
